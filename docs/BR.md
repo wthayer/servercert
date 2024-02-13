@@ -1698,7 +1698,7 @@ The CA SHALL reject a certificate request if one or more of the following condit
     1. In the case of ROCA vulnerability, the CA SHALL reject keys identified by the tools available at https://github.com/crocs-muni/roca or equivalent.
     2. In the case of Close Primes vulnerability (https://fermatattack.secvuln.info/), the CA SHALL reject weak keys which can be factored within 100 rounds using Fermat’s factorization method.  
 
-        Debian weak keys (https://wiki.debian.org/SSLkeys) are exempt from this requirement;
+        Debian weak keys (https://wiki.debian.org/SSLkeys) are exempt from this requirement.
 
         Suggested tools for checking for weak keys can be found here: https://cabforum.org/resources/tools/
 
