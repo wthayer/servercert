@@ -912,7 +912,9 @@ The token (as defined in RFC 8737, Section 3) MUST NOT be used for more than 30 
 
 Confirming the Applicant's control over a FQDN by validating domain control of the FQDN using the “dns-account‐01” challenge in draft 00 of “ACME Scoped DNS Challenges,” available at [https://www.ietf.org/archive/id/draft-ietf-acme-scoped-dns-challenges-00.html](https://www.ietf.org/archive/id/draft-ietf-acme-scoped-dns-challenges-00.html).
 
-**Note**: Once the FQDN has been validated using this method, the CA MAY also issue Certificates for other FQDNs that end with all the Domain Labels of the validated FQDN if the scope of the challenge is "domain". This method is suitable for validating Wildcard Domain Names if the scope of the challenge is "wildcard".
+The token (as defined in this draft RFC) MUST NOT be used for more than 30 days from its creation. The CPS MAY specify a shorter validity period for the token, in which case the CA MUST follow its CPS.
+
+**Note**: Once the FQDN has been validated using this method, the CA MAY also issue Certificates for other FQDNs that end with all the Domain Labels of the validated FQDN if the scope of the challenge is "domain" as defined in this draft RFC. This method is suitable for validating Wildcard Domain Names if the scope of the challenge is "wildcard" as defined in this draft RFC.
 
 #### 3.2.2.5 Authentication for an IP Address
 
