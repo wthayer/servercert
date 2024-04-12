@@ -1695,7 +1695,7 @@ The CA SHALL reject a certificate request if one or more of the following condit
 3. The CA is aware of a demonstrated or proven method that exposes the Applicant's Private Key to compromise;
 4. The CA has previously been notified that the Applicant's Private Key has suffered a Key Compromise using the CA's procedure for revocation request as described in [Section 4.9.3](#493-procedure-for-revocation-request) and [Section 4.9.12](4912-special-requirements-re-key-compromise);
 5. The Public Key corresponds to an industry-demonstrated weak Private Key. For requests submitted on or after November 15, 2024, at least the following precautions SHALL be implemented:
-    1. In the case of Debian weak keys vulnerability ([https://wiki.debian.org/SSLkeys)]), the CA SHALL reject all keys found at [https://github.com/cabforum/debian-weak-keys/] for each key type (e.g. RSa, ECDSA) and size listed in the repository. For all other key types and sizes, the CA SHALL reject Debian weak keys.
+    1. In the case of Debian weak keys vulnerability ([https://wiki.debian.org/SSLkeys)]), the CA SHALL reject all keys found at [https://github.com/cabforum/debian-weak-keys/] for each key type (e.g. RSA, ECDSA) and size listed in the repository. For all other key types and sizes, the CA SHALL reject Debian weak keys.
     2. In the case of ROCA vulnerability, the CA SHALL reject keys identified by the tools available at https://github.com/crocs-muni/roca or equivalent.
     3. In the case of Close Primes vulnerability (https://fermatattack.secvuln.info/), the CA SHALL reject weak keys which can be factored within 100 rounds using Fermat’s factorization method.  
 
